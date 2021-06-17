@@ -1,7 +1,6 @@
 <template>
     <div class="frame">
         <div class="center">
-		    <p>Happy coding :)</p>
         </div>
     </div>
 </template>
