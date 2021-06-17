@@ -1,11 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
   <Day1 />
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import Day1 from './components/Day1.vue'
 
 // This starter template is using Vue 3 experimental <script setup> SFCs
