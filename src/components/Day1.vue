@@ -43,7 +43,7 @@
     }
 
     a:focus > .middle {
-        animation-name: example;
+        animation-name: middleAnimation;
         animation-duration: 0.25s;
         transition:width 1s ease-in-out;
     }
@@ -53,7 +53,7 @@
         animation-duration: 0.25s;
     }
 
-    @keyframes example {
+    @keyframes middleAnimation {
        0% {
           margin-left: -2.3em;
           margin-right: -2.3em;
