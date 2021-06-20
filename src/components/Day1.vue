@@ -27,8 +27,9 @@
     }
 
     .top {
-        background-color: red;
+        background-color: white;
         margin-top: -0.54em;
+        z-index: 100;
     }
 
     .middle {
@@ -37,20 +38,53 @@
     }
 
     .bottom {
-        background-color: blue;
+        background-color: white;
         margin-top: 1.66em;
 
     }
 
     a:focus > .middle {
         animation-name: middleAnimation;
-        animation-duration: 0.25s;
+        animation-duration: 0.5s;
         transition:width 1s ease-in-out;
     }
 
     a:focus > .top {
         animation-name: topAnimation;
-        animation-duration: 0.25s;
+        animation-duration: 0.5s;
+    }
+
+    a:focus > .bottom {
+        animation-name: bottomAnimation;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes topAnimation {
+        0% {
+            margin-top: -0.54em;
+        }
+
+        25% {
+            margin-top: .56em;
+        }
+
+        50% {
+            margin-top: 0.56em;
+        }
+    }
+
+    @keyframes bottomAnimation { 
+        0% {
+            margin-top: 1.66em;
+        }
+
+        25% {
+            margin-top: 1.1em;
+        }
+
+        50% {
+            margin-top: 0.56em;
+        }
     }
 
     @keyframes middleAnimation {
