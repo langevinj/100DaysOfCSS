@@ -40,7 +40,6 @@
     .bottom {
         background-color: white;
         margin-top: 1.66em;
-
     }
 
     a:focus > .middle {
@@ -55,8 +54,8 @@
     }
 
     a:focus > .bottom {
-        animation-name: bottomAnimation;
         animation-duration: 0.5s;
+        animation-name: bottomAnimation;
     }
 
     @keyframes topAnimation {
@@ -71,6 +70,16 @@
         50% {
             margin-top: 0.56em;
         }
+
+        75% {
+            margin-top: 0.56em;
+            transform: rotate(135deg)
+        }
+
+        100% {
+            margin-top: 0.56em;
+            transform: rotate(135deg)
+        }
     }
 
     @keyframes bottomAnimation { 
@@ -84,6 +93,16 @@
 
         50% {
             margin-top: 0.56em;
+        }
+
+        75% {
+            margin-top: 0.56em;
+            transform: rotate(45deg)
+        }
+
+        100% {
+            margin-top: 0.56em;
+            transform: rotate(45deg)
         }
     }
 
@@ -106,6 +125,28 @@
           width: 0em;
           display: none;
        }
+
+       75% {
+           display: none;
+       }
+
+       100% {
+           display: none;
+       }
+    }
+
+    a:focus > .top {
+        transform: rotate(135deg);
+        margin-top: 0.56em;
+    }
+
+    a:focus .bottom { 
+        margin-top: 0.56em;
+        transform: rotate(45deg)
+    }
+
+    a:focus .middle {
+        display: none;
     }
 
     .frame {
