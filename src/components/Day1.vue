@@ -1,9 +1,11 @@
 <template>
     <div class="frame">
         <div class="center">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <a href="#">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+        </a>
         </div>
     </div>
 </template>
@@ -14,15 +16,49 @@
 </script>
 
 <style scoped>
-    .bar {
-        background-color: white;
+    .top, .middle, .bottom {
+        left: 50%;
         width: 75px;
-        height: 7px;
         margin-bottom: 12px;
+        height: 7px;
+        background-color: white;
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        top: 50%;
     }
-    
+
+    .middle {
+        margin: 12px auto;
+    }
+
+    a:focus > .middle {
+        animation-name: example;
+        animation-duration: 0.25s;
+        transition:width 1s ease-in-out;
+    }
+
+    @keyframes example {
+       0% {
+          transform: scaleX(1);
+       } 
+
+       25% {
+           transform: scaleX(.5);
+       }
+
+       50% {
+           transform: scaleX(.50);
+       }
+
+       75% {
+           width: 0;
+       }
+
+       100% {
+          width: 0;
+       }
+    }
+
     .frame {
     position: absolute;
     top: 50%;
