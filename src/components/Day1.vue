@@ -51,29 +51,33 @@
     a:focus > .top {
         animation-name: topAnimation;
         animation-duration: 0.5s;
+        transition: 1s ease-in-out;
     }
 
     a:focus > .bottom {
         animation-duration: 0.5s;
         animation-name: bottomAnimation;
+        transition: 1s ease-in-out;
     }
 
     @keyframes topAnimation {
         0% {
             margin-top: -0.54em;
+            transform: rotate(0);
         }
 
         25% {
             margin-top: .56em;
+            transform: rotate(0);
         }
 
         50% {
             margin-top: 0.56em;
+            transform: rotate(0);
         }
 
         75% {
             margin-top: 0.56em;
-            transform: rotate(135deg)
         }
 
         100% {
@@ -85,19 +89,21 @@
     @keyframes bottomAnimation { 
         0% {
             margin-top: 1.66em;
+            transform: rotate(0);
         }
 
         25% {
             margin-top: 1.1em;
+            transform: rotate(0);
         }
 
         50% {
             margin-top: 0.56em;
+            transform: rotate(0);
         }
 
         75% {
             margin-top: 0.56em;
-            transform: rotate(45deg)
         }
 
         100% {
