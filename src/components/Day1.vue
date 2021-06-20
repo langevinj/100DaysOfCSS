@@ -18,17 +18,28 @@
 <style scoped>
     .top, .middle, .bottom {
         left: 50%;
-        width: 75px;
-        margin-bottom: 12px;
-        height: 7px;
-        background-color: white;
+        margin-left: -2.3em;
+        width: 4.6em;
+        height: 0.54em;
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        top: 50%;
+        position: absolute;
+    }
+
+    .top {
+        background-color: red;
+        margin-top: -0.54em;
     }
 
     .middle {
-        margin: 12px auto;
+        margin-top: 0.56em;
+        background-color: white;
+    }
+
+    .bottom {
+        background-color: blue;
+        margin-top: 1.66em;
+
     }
 
     a:focus > .middle {
@@ -37,25 +48,29 @@
         transition:width 1s ease-in-out;
     }
 
+    a:focus > .top {
+        animation-name: topAnimation;
+        animation-duration: 0.25s;
+    }
+
     @keyframes example {
        0% {
-          transform: scaleX(1);
+          margin-left: -2.3em;
+          margin-right: -2.3em;
+          width: 4.6em;
        } 
 
        25% {
-           transform: scaleX(.5);
+           margin-left: -1.15em;
+           margin-right: -1.15em;
+           width: 2.3em;
        }
 
        50% {
-           transform: scaleX(.50);
-       }
-
-       75% {
-           width: 0;
-       }
-
-       100% {
-          width: 0;
+          margin-left: -0em;
+          margin-right: -0em;
+          width: 0em;
+          display: none;
        }
     }
 
