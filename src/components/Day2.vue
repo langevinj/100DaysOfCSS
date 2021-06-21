@@ -1,6 +1,7 @@
 <template>
     <div class="circle">
         <div class="segment-top"></div>
+        <div class="triangle"></div>
         <div class="segment-bottom"></div>
     </div>
 </template>
@@ -19,6 +20,16 @@
         margin-top: -100px;
         margin-left: -90px;
         overflow: hidden;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border: 65px solid transparent;
+      border-bottom-color: white;
+      top: 0px;
+      left: 25px;
+      position: absolute;
     }
 
    .segment-top {
