@@ -1,6 +1,7 @@
 <template>
     <div class="circle">
         <div class="segment-top"></div>
+        <div class="sun"></div>
         <div class="triangle"></div>
         <div class="segment-bottom"></div>
     </div>
@@ -20,6 +21,17 @@
         margin-top: -100px;
         margin-left: -90px;
         overflow: hidden;
+    }
+
+    .sun {
+        background: yellow;
+        position: absolute;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        z-index: 30;
+        top: 5px;
+        left: 70px;
     }
 
     .triangle {
