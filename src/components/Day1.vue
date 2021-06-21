@@ -9,6 +9,10 @@
 <script>
 </script>
 
+<style>
+    
+</style>
+
 <style scoped>
     .top, .middle, .bottom {
         left: 50%;
