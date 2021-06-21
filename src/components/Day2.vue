@@ -30,8 +30,38 @@
         width: 35px;
         height: 35px;
         z-index: 30;
-        top: 5px;
-        left: 70px;
+        top: 15px;
+        left: 120px;
+        animation: 3s ease-in-out 0s infinite sunAnimation;
+    }
+
+    @keyframes sunAnimation {
+        0% {
+            top: 65px;
+            left: -30px;
+        }
+
+        25% {
+            top: 15px;
+            left: 20px;
+        }
+
+        50% {
+            top: 15px;
+            left: 20px;
+        }
+
+        75% {
+            top: 15px;
+            left: 120px;
+        }
+
+        100% {
+            top: 65px;
+            left: 175px;
+        }
+
+
     }
 
     .triangle {
